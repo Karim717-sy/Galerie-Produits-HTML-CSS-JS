@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Découvrez notre sélection de produits technologiques : casque audio, montre connectée et écouteurs Bluetooth."
+    >
+
+    <title>TechStore | Galerie de produits</title>
+
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Script JavaScript chargé après l'analyse du HTML -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- En-tête du site -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="#" class="logo" aria-label="TechStore, accueil">
+                <span class="logo-icon" aria-hidden="true">T</span>
+                <span>Tech<span class="logo-accent">Store</span></span>
+            </a>
+
+            <button
+                type="button"
+                id="theme-toggle"
+                class="theme-toggle"
+                aria-label="Activer le mode sombre"
+                aria-pressed="false"
+            >
+                <span id="theme-icon" aria-hidden="true">☾</span>
+                <span id="theme-label">Mode sombre</span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="products-section" aria-labelledby="section-title">
+
+            <!-- Introduction -->
+            <div class="section-heading">
+                <span class="eyebrow">TECHNOLOGIE & INNOVATION</span>
+
+                <h1 id="section-title">
+                    La technologie<br>
+                    <span>à votre portée.</span>
+                </h1>
+
+                <p>
+                    Découvrez des accessoires conçus pour améliorer
+                    votre quotidien. Design, performance et simplicité
+                    réunis dans une sélection exclusive.
+                </p>
+            </div>
+
+            <!-- Galerie de produits -->
+            <div class="products-grid">
+
+                <!-- Produit 1 : casque audio -->
+                <article
+                    class="product-card"
+                    style="--card-index: 0"
+                >
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">POPULAIRE</span>
+
+                        <img
+                            class="product-image"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+                            alt="Casque audio sans fil au design moderne"
+                            loading="eager"
+                            fetchpriority="high"
+                        >
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">AUDIO</span>
+
+                        <h2>Casque audio sans fil</h2>
+
+                        <p class="product-description">
+                            Profitez d'un son immersif et d'un confort
+                            exceptionnel pour écouter vos morceaux préférés.
+                        </p>
+
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-value">35 000</span>
+                                <span class="price-currency">FCFA</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="discover-button"
+                                data-product="headphones"
+                                aria-haspopup="dialog"
+                            >
+                                Découvrir
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 2 : montre connectée -->
+                <article
+                    class="product-card"
+                    style="--card-index: 1"
+                >
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-new">NOUVEAU</span>
+
+                        <img
+                            class="product-image"
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85"
+                            alt="Montre au design élégant avec bracelet moderne"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">CONNECTÉ</span>
+
+                        <h2>Montre connectée</h2>
+
+                        <p class="product-description">
+                            Gardez un œil sur vos notifications et
+                            profitez d'un accessoire élégant au quotidien.
+                        </p>
+
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-value">45 000</span>
+                                <span class="price-currency">FCFA</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="discover-button"
+                                data-product="smartwatch"
+                                aria-haspopup="dialog"
+                            >
+                                Découvrir
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 3 : écouteurs Bluetooth -->
+                <article
+                    class="product-card"
+                    style="--card-index: 2"
+                >
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">BEST-SELLER</span>
+
+                        <img
+                            class="product-image"
+                            src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85"
+                            alt="Écouteurs sans fil accompagnés de leur boîtier de recharge"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">BLUETOOTH</span>
+
+                        <h2>Écouteurs Bluetooth</h2>
+
+                        <p class="product-description">
+                            Emportez votre musique partout avec des
+                            écouteurs compacts et pratiques à utiliser.
+                        </p>
+
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-value">18 500</span>
+                                <span class="price-currency">FCFA</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="discover-button"
+                                data-product="earbuds"
+                                aria-haspopup="dialog"
+                            >
+                                Découvrir
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Petit texte sous la galerie -->
+            <p class="gallery-note">
+                <span class="note-dot" aria-hidden="true"></span>
+                Une sélection pensée pour votre quotidien.
+            </p>
+
+        </section>
+    </main>
+
+    <!-- Fenêtre de détails du produit -->
+    <dialog
+        id="product-dialog"
+        class="product-dialog"
+        aria-labelledby="dialog-title"
+    >
+        <div class="dialog-content">
+
+            <button
+                type="button"
+                id="dialog-close"
+                class="dialog-close"
+                aria-label="Fermer la fenêtre"
+                autofocus
+            >
+                &times;
+            </button>
+
+            <img
+                id="dialog-image"
+                class="dialog-image"
+                src=""
+                alt=""
+            >
+
+            <div class="dialog-information">
+                <span id="dialog-category" class="product-category"></span>
+
+                <h2 id="dialog-title"></h2>
+
+                <p id="dialog-description"></p>
+
+                <div class="dialog-price">
+                    <span id="dialog-price-value"></span>
+                    <span>FCFA</span>
+                </div>
+
+                <p class="dialog-note">
+                    Produit présenté à titre de démonstration.
+                </p>
+
+                <button
+                    type="button"
+                    id="dialog-understood"
+                    class="dialog-action"
+                >
+                    Fermer
+                </button>
+            </div>
+
+        </div>
+    </dialog>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="current-year"></span> TechStore.
+            Tous droits réservés.
+        </p>
+
+        <p>Conçu avec HTML, CSS et JavaScript.</p>
+    </footer>
+
+</body>
+</html>
